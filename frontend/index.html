@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+</head>
+<body>
+<div class="loader-container" id="loader">
+    <div class="loader"></div>
+</div>
+
+<h1>¡Subir imágenes!</h1>
+
+<div class="result" id="result"></div>
+
+<div id="dropzone" class="drop-zone">
+    <div class="img-preview" id="imgPreview"></div>
+    Suelte aquí la imagen o haga click para seleccionarla...
+</div>
+
+<form class="form-upload-image" id="formUploadImage">
+    <div>
+        <input type="file" name="image" id="imageInput" class="image-input">
+    </div>
+
+    <div class="container-controls">
+        <div>
+            <p>o</p>
+        </div>
+        <div>
+            <a href="#" class="btn btn-light" id="btnSelectFile">Seleccionar un archivo</a>
+        </div>
+        <div>
+            <button type="submit" id="btnSend" class="btn send-button">Subir</button>
+        </div>
+    </div>
+
+</form>
+
+<div id="snackbar">Some text some message..</div>
+
+
+<script type="module" src="/main.js"></script>
+</body>
+</html>
